@@ -1,2 +1,5 @@
 .DS_STORE
 node_modules/
+js/bundle.js
+js/templates.js
+js/vendor.js

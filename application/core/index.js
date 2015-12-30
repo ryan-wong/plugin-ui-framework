@@ -21,7 +21,7 @@ module.exports = angular.module('framework.core', [])
 .service('digi', [Digi])
 .service('httpService', ['$http', '$q', '$rootScope', HttpService])
 .service('registryService', [Registry])
-.service('accountService', ['httpService', AccountService])
+.service('accountService', ['httpService', '$rootScope', AccountService])
 .controller('hostController', ['accountService', '$scope', HostController])
 .config(function ($stateProvider, $urlRouterProvider) {
     $stateProvider.state('app', {
